@@ -1,0 +1,2803 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.2.4.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+    &lt;title&gt;BioRisk Sentinel&lt;/title&gt;
+
+    &lt;!-- Bootstrap --&gt;
+    &lt;link
+        href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot;
+        rel=&quot;stylesheet&quot;&gt;
+
+    &lt;!-- Bootstrap Icons --&gt;
+    &lt;link
+        rel=&quot;stylesheet&quot;
+        href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css&quot;&gt;
+
+    &lt;!-- Custom CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;nav&gt;
+
+	&lt;a href=&quot;index.html&quot;&gt;&lt;/a&gt;
+	&lt;a href=&quot;login.html&quot;&gt;&lt;/a&gt;
+	&lt;a href=&quot;dashboard.html&quot;&gt;&lt;/a&gt;
+	&lt;a href=&quot;assesment.html&quot;&gt;&lt;/a&gt;
+	&lt;a href=&quot;result.html&quot;&gt;&lt;/a&gt;
+	&lt;a href=&quot;history.html&quot;&gt;&lt;/a&gt;
+
+&lt;/nav&gt;
+&lt;!-- ================= NAVBAR ================= --&gt;
+
+&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark fixed-top&quot;&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+        &lt;a class=&quot;navbar-brand fw-bold&quot; href=&quot;index.html&quot;&gt;
+            &lt;i class=&quot;bi bi-shield-check&quot;&gt;&lt;/i&gt;
+            BioRisk Sentinel
+        &lt;/a&gt;
+
+        &lt;button
+            class=&quot;navbar-toggler&quot;
+            type=&quot;button&quot;
+            data-bs-toggle=&quot;collapse&quot;
+            data-bs-target=&quot;#navbarNav&quot;&gt;
+
+            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+
+        &lt;/button&gt;
+
+        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;
+
+            &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link&quot; href=&quot;#features&quot;&gt;
+                        Features
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link&quot; href=&quot;#workflow&quot;&gt;
+                        Workflow
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li class=&quot;nav-item ms-lg-3&quot;&gt;
+                    &lt;a href=&quot;login.html&quot;
+                       class=&quot;btn btn-primary px-4&quot;&gt;
+
+                        Assessor Login
+
+                    &lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;
+
+
+&lt;!-- ================= HERO ================= --&gt;
+
+&lt;section class=&quot;hero-section&quot;&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+        &lt;div class=&quot;row align-items-center min-vh-100&quot;&gt;
+
+            &lt;!-- LEFT --&gt;
+
+            &lt;div class=&quot;col-lg-7&quot;&gt;
+
+                &lt;span class=&quot;badge bg-primary-subtle text-info mb-3&quot;&gt;
+                    CYBERSECURITY ASSESSMENT PLATFORM
+                &lt;/span&gt;
+
+                &lt;h1 class=&quot;display-3 fw-bold&quot;&gt;
+
+                    Secure biometric
+                    authentication with
+
+                    &lt;span class=&quot;text-primary&quot;&gt;
+                        confidence.
+                    &lt;/span&gt;
+
+                &lt;/h1&gt;
+
+                &lt;p class=&quot;lead text-secondary mt-4&quot;&gt;
+
+                    BioRisk Sentinel evaluates the reliability,
+                    privacy and attack resistance of biometric
+                    authentication systems used in high-risk
+                    financial environments.
+
+                &lt;/p&gt;
+
+                &lt;div class=&quot;mt-4&quot;&gt;
+
+                    &lt;a href=&quot;login.html&quot;
+                       class=&quot;btn btn-primary btn-lg me-2&quot;&gt;
+
+                        Start Assessment
+                        &lt;i class=&quot;bi bi-arrow-right&quot;&gt;&lt;/i&gt;
+
+                    &lt;/a&gt;
+
+                    &lt;a href=&quot;#features&quot;
+                       class=&quot;btn btn-outline-light btn-lg&quot;&gt;
+
+                        Explore Platform
+
+                    &lt;/a&gt;
+
+                &lt;/div&gt;
+
+
+                &lt;!-- STATS --&gt;
+
+                &lt;div class=&quot;row mt-5&quot;&gt;
+
+                    &lt;div class=&quot;col-4&quot;&gt;
+
+                        &lt;h3 class=&quot;fw-bold&quot;&gt;3&lt;/h3&gt;
+
+                        &lt;p class=&quot;text-secondary&quot;&gt;
+                            Security Pillars
+                        &lt;/p&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;col-4&quot;&gt;
+
+                        &lt;h3 class=&quot;fw-bold&quot;&gt;100&lt;/h3&gt;
+
+                        &lt;p class=&quot;text-secondary&quot;&gt;
+                            Point Privacy Scale
+                        &lt;/p&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;col-4&quot;&gt;
+
+                        &lt;h3 class=&quot;fw-bold&quot;&gt;24/7&lt;/h3&gt;
+
+                        &lt;p class=&quot;text-secondary&quot;&gt;
+                            Assessment History
+                        &lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+            &lt;!-- RIGHT --&gt;
+
+            &lt;div class=&quot;col-lg-5 mt-5&quot;&gt;
+
+                &lt;div class=&quot;card bg-dark border-secondary shadow-lg&quot;&gt;
+
+                    &lt;div class=&quot;card-body p-4&quot;&gt;
+
+                        &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+
+                            &lt;div&gt;
+
+                                &lt;small class=&quot;text-secondary&quot;&gt;
+                                    CURRENT ASSESSMENT
+                                &lt;/small&gt;
+
+                                &lt;h5 class=&quot;mt-2&quot;&gt;
+                                    ABC Bank
+                                &lt;/h5&gt;
+
+                            &lt;/div&gt;
+
+                            &lt;span class=&quot;badge bg-success&quot;&gt;
+                                LOW RISK
+                            &lt;/span&gt;
+
+                        &lt;/div&gt;
+
+
+                        &lt;div class=&quot;text-center my-4&quot;&gt;
+
+                            &lt;div class=&quot;score-circle&quot;&gt;
+
+                                &lt;h1&gt;85&lt;/h1&gt;
+
+                                &lt;span&gt;/100&lt;/span&gt;
+
+                            &lt;/div&gt;
+
+                            &lt;p class=&quot;text-secondary mt-3&quot;&gt;
+                                Overall Security Score
+                            &lt;/p&gt;
+
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row text-center&quot;&gt;
+
+                            &lt;div class=&quot;col-4&quot;&gt;
+
+                                &lt;h4&gt;88&lt;/h4&gt;
+
+                                &lt;small class=&quot;text-secondary&quot;&gt;
+                                    Reliability
+                                &lt;/small&gt;
+
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-4&quot;&gt;
+
+                                &lt;h4&gt;82&lt;/h4&gt;
+
+                                &lt;small class=&quot;text-secondary&quot;&gt;
+                                    Privacy
+                                &lt;/small&gt;
+
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-4&quot;&gt;
+
+                                &lt;h4&gt;85&lt;/h4&gt;
+
+                                &lt;small class=&quot;text-secondary&quot;&gt;
+                                    Attack
+                                &lt;/small&gt;
+
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+
+                        &lt;hr&gt;
+
+                        &lt;div class=&quot;d-flex gap-3&quot;&gt;
+
+                            &lt;i class=&quot;bi bi-exclamation-triangle text-warning&quot;&gt;&lt;/i&gt;
+
+                            &lt;div&gt;
+
+                                &lt;strong&gt;
+                                    2 Priority Findings
+                                &lt;/strong&gt;
+
+                                &lt;p class=&quot;small text-secondary mb-0&quot;&gt;
+                                    Retention policy and spoof detection
+                                &lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
+
+
+&lt;!-- ================= FEATURES ================= --&gt;
+
+&lt;section id=&quot;features&quot; class=&quot;py-5&quot;&gt;
+
+    &lt;div class=&quot;container py-5&quot;&gt;
+
+        &lt;div class=&quot;text-center mb-5&quot;&gt;
+
+            &lt;span class=&quot;text-primary&quot;&gt;
+                PLATFORM FEATURES
+            &lt;/span&gt;
+
+            &lt;h2 class=&quot;fw-bold mt-2&quot;&gt;
+                Security assessment made simple
+            &lt;/h2&gt;
+
+            &lt;p class=&quot;text-secondary&quot;&gt;
+                Transform test results into meaningful
+                security decisions.
+            &lt;/p&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;row g-4&quot;&gt;
+
+            &lt;!-- CARD 1 --&gt;
+
+            &lt;div class=&quot;col-md-4&quot;&gt;
+
+                &lt;div class=&quot;feature-card h-100&quot;&gt;
+
+                    &lt;i class=&quot;bi bi-speedometer2 feature-icon&quot;&gt;&lt;/i&gt;
+
+                    &lt;h4&gt;
+                        Reliability Assessment
+                    &lt;/h4&gt;
+
+                    &lt;p class=&quot;text-secondary&quot;&gt;
+
+                        Measure authentication accuracy,
+                        false acceptance, false rejection
+                        and response performance.
+
+                    &lt;/p&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+
+            &lt;!-- CARD 2 --&gt;
+
+            &lt;div class=&quot;col-md-4&quot;&gt;
+
+                &lt;div class=&quot;feature-card h-100&quot;&gt;
+
+                    &lt;i class=&quot;bi bi-lock feature-icon&quot;&gt;&lt;/i&gt;
+
+                    &lt;h4&gt;
+                        Privacy Assessment
+                    &lt;/h4&gt;
+
+                    &lt;p class=&quot;text-secondary&quot;&gt;
+
+                        Evaluate encryption, access control,
+                        audit logging, retention and
+                        data protection controls.
+
+                    &lt;/p&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+
+            &lt;!-- CARD 3 --&gt;
+
+            &lt;div class=&quot;col-md-4&quot;&gt;
+
+                &lt;div class=&quot;feature-card h-100&quot;&gt;
+
+                    &lt;i class=&quot;bi bi-shield-exclamation feature-icon&quot;&gt;&lt;/i&gt;
+
+                    &lt;h4&gt;
+                        Attack Resistance
+                    &lt;/h4&gt;
+
+                    &lt;p class=&quot;text-secondary&quot;&gt;
+
+                        Evaluate replay, spoofing,
+                        brute-force and authentication
+                        bypass detection.
+
+                    &lt;/p&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/section&gt;
+
+
+&lt;!-- ================= WORKFLOW ================= --&gt;
+
+&lt;section id=&quot;workflow&quot; class=&quot;py-5 bg-dark&quot;&gt;
+
+    &lt;div class=&quot;container py-5&quot;&gt;
+
+        &lt;div class=&quot;row align-items-center&quot;&gt;
+
+            &lt;div class=&quot;col-lg-5&quot;&gt;
+
+                &lt;span class=&quot;text-primary&quot;&gt;
+                    ASSESSMENT WORKFLOW
+                &lt;/span&gt;
+
+                &lt;h2 class=&quot;fw-bold mt-3&quot;&gt;
+
+                    From test data
+                    to security decision.
+
+                &lt;/h2&gt;
+
+                &lt;p class=&quot;text-secondary mt-3&quot;&gt;
+
+                    Enter aggregated, non-sensitive
+                    assessment information and let
+                    BioRisk Sentinel generate transparent
+                    security insights.
+
+                &lt;/p&gt;
+
+            &lt;/div&gt;
+
+
+            &lt;div class=&quot;col-lg-7&quot;&gt;
+
+                &lt;div class=&quot;workflow-item&quot;&gt;
+                    &lt;span&gt;01&lt;/span&gt;
+                    System Information
+                &lt;/div&gt;
+
+                &lt;div class=&quot;workflow-item&quot;&gt;
+                    &lt;span&gt;02&lt;/span&gt;
+                    Reliability Test Data
+                &lt;/div&gt;
+
+                &lt;div class=&quot;workflow-item&quot;&gt;
+                    &lt;span&gt;03&lt;/span&gt;
+                    Privacy Questionnaire
+                &lt;/div&gt;
+
+                &lt;div class=&quot;workflow-item&quot;&gt;
+                    &lt;span&gt;04&lt;/span&gt;
+                    Authorized Attack Tests
+                &lt;/div&gt;
+
+                &lt;div class=&quot;workflow-item&quot;&gt;
+                    &lt;span&gt;05&lt;/span&gt;
+                    Risk Engine &amp; Recommendations
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/section&gt;
+
+
+&lt;!-- ================= FOOTER ================= --&gt;
+
+&lt;footer class=&quot;py-4 border-top border-secondary&quot;&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+        &lt;div class=&quot;row&quot;&gt;
+
+            &lt;div class=&quot;col-md-6&quot;&gt;
+
+                &lt;strong&gt;
+                    &lt;i class=&quot;bi bi-shield-check&quot;&gt;&lt;/i&gt;
+                    BioRisk Sentinel
+                &lt;/strong&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class=&quot;col-md-6 text-md-end text-secondary&quot;&gt;
+
+                Student Cybersecurity Project © 2026
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/footer&gt;
+
+
+&lt;script
+src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js&quot;&gt;
+&lt;/script&gt;
+
+&lt;/body&gt;
+
+
+
+																																			LOGIN PART
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+
+    &lt;meta name=&quot;viewport&quot;content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Login | BioRisk Sentinel&lt;/title&gt;
+    &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+
+&lt;/head&gt;
+&lt;body class=&quot;login-page&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+
+    &lt;div class=&quot;row justify-content-center align-items-center&quot; style=&quot;min-height:100vh;&quot;&gt;
+        &lt;div class=&quot;col-md-5&quot;&gt;
+
+            &lt;div class=&quot;login-card&quot;&gt;
+
+                &lt;div class=&quot;text-center&quot;&gt;
+
+                    &lt;i class=&quot;bi bi-shield-check display-4 text-primary&quot;&gt;&lt;/i&gt;
+
+                    &lt;h3 class=&quot;fw-bold mt-3&quot;&gt;  BioRisk Sentinel&lt;/h3&gt;
+
+                    &lt;p class=&quot;text-secondary&quot;&gt; Security Assessment Portal &lt;/p&gt;
+
+                &lt;/div&gt;
+
+
+                &lt;form class=&quot;mt-4&quot; onsubmit=&quot;loginUser(event)&quot;&gt;
+
+                    &lt;div class=&quot;mb-3&quot;&gt;
+
+                        &lt;label class=&quot;form-label&quot;&gt; Email Address &lt;/label&gt;
+
+                        &lt;input
+                        type=&quot;email&quot;
+                        class=&quot;form-control&quot;
+                        placeholder=&quot;assessor@example.com&quot;
+                        required&gt;
+
+                    &lt;/div&gt;
+
+
+                    &lt;div class=&quot;mb-3&quot;&gt;
+
+                        &lt;label class=&quot;form-label&quot;&gt;  Password &lt;/label&gt;
+
+                        &lt;input type=&quot;password&quot; class=&quot;form-control&quot; placeholder=&quot;Enter password&quot; required&gt;
+
+                    &lt;/div&gt;
+
+
+                    &lt;div class=&quot;d-flex justify-content-between mb-4&quot;&gt;
+
+                        &lt;div&gt;
+
+                            &lt;input type=&quot;checkbox&quot;&gt;
+
+                            &lt;small&gt;  Remember me &lt;/small&gt;
+                        &lt;/div&gt;
+                        &lt;a href=&quot;#&quot;&gt; Forgot password? &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary w-100 btn-lg&quot;&gt; Sign In &lt;/button&gt;
+                &lt;/form&gt;
+                &lt;div class=&quot;text-center mt-4&quot;&gt;
+                    &lt;a href=&quot;index.html&quot;&gt;
+                        ← Back to Home
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+function loginUser(event) {
+    event.preventDefault();
+    window.location.href = &quot;dashboard.html&quot;;
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+																															DASHBOARD PART
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+
+&lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+&lt;title&gt;Dashboard | BioRisk Sentinel&lt;/title&gt;
+
+&lt;link
+href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot;
+rel=&quot;stylesheet&quot;&gt;
+
+&lt;link
+rel=&quot;stylesheet&quot;
+href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot;
+href=&quot;css/style.css&quot;&gt;
+
+&lt;/head&gt;
+
+
+&lt;body&gt;
+
+
+&lt;!-- SIDEBAR --&gt;
+
+&lt;div class=&quot;sidebar&quot;&gt;
+
+    &lt;h4 class=&quot;fw-bold mb-5&quot;&gt;
+
+        &lt;i class=&quot;bi bi-shield-check text-primary&quot;&gt;&lt;/i&gt;
+
+        BioRisk
+
+    &lt;/h4&gt;
+
+
+    &lt;a class=&quot;active&quot;
+       href=&quot;dashboard.html&quot;&gt;
+
+        &lt;i class=&quot;bi bi-grid&quot;&gt;&lt;/i&gt;
+        Dashboard
+
+    &lt;/a&gt;
+
+
+    &lt;a href=&quot;assessment.html&quot;&gt;
+
+        &lt;i class=&quot;bi bi-plus-circle&quot;&gt;&lt;/i&gt;
+        New Assessment
+
+    &lt;/a&gt;
+
+
+    &lt;a href=&quot;history.html&quot;&gt;
+
+        &lt;i class=&quot;bi bi-clock-history&quot;&gt;&lt;/i&gt;
+        Assessment History
+
+    &lt;/a&gt;
+
+
+    &lt;a href=&quot;results.html&quot;&gt;
+
+        &lt;i class=&quot;bi bi-exclamation-diamond&quot;&gt;&lt;/i&gt;
+        Findings
+
+    &lt;/a&gt;
+
+
+    &lt;a href=&quot;#&quot;&gt;
+
+        &lt;i class=&quot;bi bi-graph-up&quot;&gt;&lt;/i&gt;
+        Trend Dashboard
+
+    &lt;/a&gt;
+
+
+    &lt;a href=&quot;#&quot;&gt;
+
+        &lt;i class=&quot;bi bi-people&quot;&gt;&lt;/i&gt;
+        User Management
+
+    &lt;/a&gt;
+
+
+    &lt;div class=&quot;sidebar-bottom&quot;&gt;
+
+        &lt;small class=&quot;text-secondary&quot;&gt;
+            Logged in as
+        &lt;/small&gt;
+
+        &lt;strong&gt;
+            Security Assessor
+        &lt;/strong&gt;
+
+        &lt;a href=&quot;index.html&quot;&gt;
+            Sign Out
+        &lt;/a&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;!-- MAIN CONTENT --&gt;
+
+&lt;div class=&quot;main-content&quot;&gt;
+
+
+    &lt;!-- HEADER --&gt;
+
+    &lt;div class=&quot;d-flex justify-content-between align-items-center mb-4&quot;&gt;
+
+        &lt;div&gt;
+
+            &lt;small class=&quot;text-primary&quot;&gt;
+                OVERVIEW
+            &lt;/small&gt;
+
+            &lt;h2 class=&quot;fw-bold&quot;&gt;
+                Security Dashboard
+            &lt;/h2&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;a href=&quot;assessment.html&quot;
+           class=&quot;btn btn-primary&quot;&gt;
+
+            &lt;i class=&quot;bi bi-plus&quot;&gt;&lt;/i&gt;
+
+            New Assessment
+
+        &lt;/a&gt;
+
+    &lt;/div&gt;
+
+
+    &lt;!-- DATA WARNING --&gt;
+
+    &lt;div class=&quot;alert alert-dark border-secondary&quot;&gt;
+
+        &lt;i class=&quot;bi bi-lock text-info&quot;&gt;&lt;/i&gt;
+
+        &lt;strong&gt;
+            Data Boundary:
+        &lt;/strong&gt;
+
+        Use only fictional organizations and
+        aggregated, non-sensitive assessment data.
+
+    &lt;/div&gt;
+
+
+    &lt;!-- STAT CARDS --&gt;
+
+    &lt;div class=&quot;row g-4 mt-2&quot;&gt;
+
+
+        &lt;div class=&quot;col-md-3&quot;&gt;
+
+            &lt;div class=&quot;dashboard-card&quot;&gt;
+
+                &lt;span class=&quot;text-secondary&quot;&gt;
+                    Assessments
+                &lt;/span&gt;
+
+                &lt;h2&gt;
+                    24
+                &lt;/h2&gt;
+
+                &lt;span class=&quot;text-success&quot;&gt;
+                    ↑ 12% this month
+                &lt;/span&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-3&quot;&gt;
+
+            &lt;div class=&quot;dashboard-card&quot;&gt;
+
+                &lt;span class=&quot;text-secondary&quot;&gt;
+                    Average Score
+                &lt;/span&gt;
+
+                &lt;h2&gt;
+                    78.4
+                &lt;/h2&gt;
+
+                &lt;span class=&quot;text-warning&quot;&gt;
+                    Medium Risk
+                &lt;/span&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-3&quot;&gt;
+
+            &lt;div class=&quot;dashboard-card&quot;&gt;
+
+                &lt;span class=&quot;text-secondary&quot;&gt;
+                    Open Findings
+                &lt;/span&gt;
+
+                &lt;h2&gt;
+                    17
+                &lt;/h2&gt;
+
+                &lt;span class=&quot;text-danger&quot;&gt;
+                    5 high priority
+                &lt;/span&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-3&quot;&gt;
+
+            &lt;div class=&quot;dashboard-card&quot;&gt;
+
+                &lt;span class=&quot;text-secondary&quot;&gt;
+                    Reports
+                &lt;/span&gt;
+
+                &lt;h2&gt;
+                    19
+                &lt;/h2&gt;
+
+                &lt;span class=&quot;text-secondary&quot;&gt;
+                    Generated
+                &lt;/span&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+
+    &lt;!-- CHART --&gt;
+
+    &lt;div class=&quot;row g-4 mt-2&quot;&gt;
+
+
+        &lt;div class=&quot;col-lg-8&quot;&gt;
+
+            &lt;div class=&quot;dashboard-card&quot;&gt;
+
+                &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+
+                    &lt;h5&gt;
+                        Security Score Trend
+                    &lt;/h5&gt;
+
+                    &lt;span class=&quot;text-secondary&quot;&gt;
+                        Last 6 assessments
+                    &lt;/span&gt;
+
+                &lt;/div&gt;
+
+                &lt;canvas
+                id=&quot;trendChart&quot;
+                height=&quot;100&quot;&gt;
+                &lt;/canvas&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;!-- RISK DISTRIBUTION --&gt;
+
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+
+            &lt;div class=&quot;dashboard-card&quot;&gt;
+
+                &lt;h5&gt;
+                    Risk Distribution
+                &lt;/h5&gt;
+
+
+                &lt;p class=&quot;mt-4 mb-1&quot;&gt;
+                    Low
+                &lt;/p&gt;
+
+                &lt;div class=&quot;progress&quot;&gt;
+
+                    &lt;div
+                    class=&quot;progress-bar bg-success&quot;
+                    style=&quot;width:42%&quot;&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+
+                &lt;p class=&quot;mt-4 mb-1&quot;&gt;
+                    Medium
+                &lt;/p&gt;
+
+                &lt;div class=&quot;progress&quot;&gt;
+
+                    &lt;div
+                    class=&quot;progress-bar bg-warning&quot;
+                    style=&quot;width:35%&quot;&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+
+                &lt;p class=&quot;mt-4 mb-1&quot;&gt;
+                    High
+                &lt;/p&gt;
+
+                &lt;div class=&quot;progress&quot;&gt;
+
+                    &lt;div
+                    class=&quot;progress-bar bg-danger&quot;
+                    style=&quot;width:18%&quot;&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+
+                &lt;p class=&quot;mt-4 mb-1&quot;&gt;
+                    Critical
+                &lt;/p&gt;
+
+                &lt;div class=&quot;progress&quot;&gt;
+
+                    &lt;div
+                    class=&quot;progress-bar bg-secondary&quot;
+                    style=&quot;width:5%&quot;&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+
+    &lt;!-- RECENT ASSESSMENTS --&gt;
+
+    &lt;div class=&quot;dashboard-card mt-4&quot;&gt;
+
+        &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+
+            &lt;h5&gt;
+                Recent Assessments
+            &lt;/h5&gt;
+
+            &lt;a href=&quot;history.html&quot;&gt;
+                View All
+            &lt;/a&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;table-responsive mt-3&quot;&gt;
+
+            &lt;table class=&quot;table table-dark table-hover&quot;&gt;
+
+                &lt;thead&gt;
+
+                    &lt;tr&gt;
+
+                        &lt;th&gt;Organization&lt;/th&gt;
+                        &lt;th&gt;Environment&lt;/th&gt;
+                        &lt;th&gt;Biometric&lt;/th&gt;
+                        &lt;th&gt;Score&lt;/th&gt;
+                        &lt;th&gt;Risk&lt;/th&gt;
+
+                    &lt;/tr&gt;
+
+                &lt;/thead&gt;
+
+
+                &lt;tbody&gt;
+
+                    &lt;tr&gt;
+
+                        &lt;td&gt;ABC Bank&lt;/td&gt;
+
+                        &lt;td&gt;Mobile Banking&lt;/td&gt;
+
+                        &lt;td&gt;Face&lt;/td&gt;
+
+                        &lt;td&gt;85&lt;/td&gt;
+
+                        &lt;td&gt;
+                            &lt;span class=&quot;badge bg-success&quot;&gt;
+                                Low
+                            &lt;/span&gt;
+                        &lt;/td&gt;
+
+                    &lt;/tr&gt;
+
+
+                    &lt;tr&gt;
+
+                        &lt;td&gt;FinSecure&lt;/td&gt;
+
+                        &lt;td&gt;ATM&lt;/td&gt;
+
+                        &lt;td&gt;Fingerprint&lt;/td&gt;
+
+                        &lt;td&gt;74&lt;/td&gt;
+
+                        &lt;td&gt;
+                            &lt;span class=&quot;badge bg-warning text-dark&quot;&gt;
+                                Medium
+                            &lt;/span&gt;
+                        &lt;/td&gt;
+
+                    &lt;/tr&gt;
+
+
+                    &lt;tr&gt;
+
+                        &lt;td&gt;NovaPay&lt;/td&gt;
+
+                        &lt;td&gt;Web Portal&lt;/td&gt;
+
+                        &lt;td&gt;Iris&lt;/td&gt;
+
+                        &lt;td&gt;62&lt;/td&gt;
+
+                        &lt;td&gt;
+                            &lt;span class=&quot;badge bg-danger&quot;&gt;
+                                High
+                            &lt;/span&gt;
+                        &lt;/td&gt;
+
+                    &lt;/tr&gt;
+
+                &lt;/tbody&gt;
+
+            &lt;/table&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;!-- CHART JS --&gt;
+
+&lt;script
+src=&quot;https://cdn.jsdelivr.net/npm/chart.js&quot;&gt;
+&lt;/script&gt;
+
+
+&lt;script&gt;
+
+const ctx =
+document.getElementById(&quot;trendChart&quot;);
+
+
+new Chart(ctx, {
+
+    type: &quot;line&quot;,
+
+    data: {
+
+        labels: [
+            &quot;March&quot;,
+            &quot;April&quot;,
+            &quot;May&quot;,
+            &quot;June&quot;,
+            &quot;July&quot;,
+            &quot;August&quot;
+        ],
+
+        datasets: [{
+
+            label: &quot;Security Score&quot;,
+
+            data: [
+                68,
+                72,
+                70,
+                76,
+                81,
+                85
+            ],
+
+            borderWidth: 3,
+
+            tension: 0.4
+
+        }]
+
+    },
+
+    options: {
+
+        responsive: true,
+
+        scales: {
+
+            y: {
+                min: 40,
+                max: 100
+            }
+
+        }
+
+    }
+
+});
+
+&lt;/script&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+																																							ASSESMENT PART
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+
+&lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+&lt;title&gt;New Assessment&lt;/title&gt;
+
+&lt;link
+href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot;
+rel=&quot;stylesheet&quot;&gt;
+
+&lt;link
+rel=&quot;stylesheet&quot;
+href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot;
+href=&quot;css/style.css&quot;&gt;
+
+&lt;/head&gt;
+
+
+&lt;body&gt;
+
+
+&lt;div class=&quot;sidebar&quot;&gt;
+
+    &lt;h4 class=&quot;fw-bold mb-5&quot;&gt;
+
+        &lt;i class=&quot;bi bi-shield-check text-primary&quot;&gt;&lt;/i&gt;
+
+        BioRisk
+
+    &lt;/h4&gt;
+
+
+    &lt;a href=&quot;dashboard.html&quot;&gt;
+
+        &lt;i class=&quot;bi bi-grid&quot;&gt;&lt;/i&gt;
+        Dashboard
+
+    &lt;/a&gt;
+
+
+    &lt;a class=&quot;active&quot;
+       href=&quot;assessment.html&quot;&gt;
+
+        &lt;i class=&quot;bi bi-plus-circle&quot;&gt;&lt;/i&gt;
+        New Assessment
+
+    &lt;/a&gt;
+
+
+    &lt;a href=&quot;history.html&quot;&gt;
+
+        &lt;i class=&quot;bi bi-clock-history&quot;&gt;&lt;/i&gt;
+        Assessment History
+
+    &lt;/a&gt;
+
+
+    &lt;a href=&quot;results.html&quot;&gt;
+
+        &lt;i class=&quot;bi bi-exclamation-diamond&quot;&gt;&lt;/i&gt;
+        Findings
+
+    &lt;/a&gt;
+
+&lt;/div&gt;
+
+
+&lt;div class=&quot;main-content&quot;&gt;
+&lt;div class=&quot;d-flex justify-content-between mb-4&quot;&gt;
+
+    &lt;div&gt;
+
+        &lt;small class=&quot;text-primary&quot;&gt;
+            ASSESSMENT / NEW
+        &lt;/small&gt;
+
+        &lt;h2 class=&quot;fw-bold&quot;&gt;
+            Create Security Assessment
+        &lt;/h2&gt;
+
+    &lt;/div&gt;
+
+    &lt;a href=&quot;dashboard.html&quot;
+       class=&quot;btn btn-outline-light&quot;&gt;
+
+        Cancel
+
+    &lt;/a&gt;
+
+&lt;/div&gt;
+
+
+&lt;!-- STEPS --&gt;
+
+&lt;div class=&quot;stepper mb-4&quot;&gt;
+
+    &lt;span class=&quot;active-step&quot;&gt;
+        1. System
+    &lt;/span&gt;
+
+    &lt;span&gt;
+        2. Reliability
+    &lt;/span&gt;
+
+    &lt;span&gt;
+        3. Privacy
+    &lt;/span&gt;
+
+    &lt;span&gt;
+        4. Attacks
+    &lt;/span&gt;
+
+    &lt;span&gt;
+        5. Results
+    &lt;/span&gt;
+
+&lt;/div&gt;
+
+
+&lt;form onsubmit=&quot;runAssessment(event)&quot;&gt;
+
+
+&lt;!-- SYSTEM INFORMATION --&gt;
+
+&lt;div class=&quot;form-section mb-4&quot;&gt;
+
+    &lt;h4&gt;
+        01 — System Information
+    &lt;/h4&gt;
+
+    &lt;p class=&quot;text-secondary&quot;&gt;
+
+        Enter assessment information only.
+        Never enter real customer biometric data.
+
+    &lt;/p&gt;
+
+
+    &lt;div class=&quot;row g-4&quot;&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;label&gt;
+                Organization Name
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;text&quot;
+            class=&quot;form-control&quot;
+            value=&quot;ABC Bank&quot;
+            required&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;label&gt;
+                Application Name
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;text&quot;
+            class=&quot;form-control&quot;
+            value=&quot;Mobile Banking&quot;
+            required&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-4&quot;&gt;
+
+            &lt;label&gt;
+                Environment
+            &lt;/label&gt;
+
+            &lt;select class=&quot;form-select&quot;&gt;
+
+                &lt;option&gt;
+                    Mobile Banking
+                &lt;/option&gt;
+
+                &lt;option&gt;
+                    ATM
+                &lt;/option&gt;
+
+                &lt;option&gt;
+                    Web Portal
+                &lt;/option&gt;
+
+                &lt;option&gt;
+                    Internal System
+                &lt;/option&gt;
+
+            &lt;/select&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-4&quot;&gt;
+
+            &lt;label&gt;
+                Biometric Type
+            &lt;/label&gt;
+
+            &lt;select class=&quot;form-select&quot;&gt;
+
+                &lt;option&gt;
+                    Face
+                &lt;/option&gt;
+
+                &lt;option&gt;
+                    Fingerprint
+                &lt;/option&gt;
+
+                &lt;option&gt;
+                    Iris
+                &lt;/option&gt;
+
+                &lt;option&gt;
+                    Voice
+                &lt;/option&gt;
+
+            &lt;/select&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-4&quot;&gt;
+
+            &lt;label&gt;
+                Number of Enrolled Users
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            class=&quot;form-control&quot;
+            value=&quot;10000&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;label&gt;
+                Assessor Name
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;text&quot;
+            class=&quot;form-control&quot;
+            value=&quot;Security Assessor&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;label&gt;
+                Assessment Date
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;date&quot;
+            class=&quot;form-control&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;div class=&quot;control-box&quot;&gt;
+
+                &lt;div&gt;
+
+                    &lt;strong&gt;
+                        MFA Enabled
+                    &lt;/strong&gt;
+
+                    &lt;p class=&quot;text-secondary mb-0&quot;&gt;
+                        Multi-factor authentication
+                    &lt;/p&gt;
+
+                &lt;/div&gt;
+
+                &lt;input
+                type=&quot;checkbox&quot;
+                class=&quot;form-check-input&quot;
+                checked&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;div class=&quot;control-box&quot;&gt;
+
+                &lt;div&gt;
+
+                    &lt;strong&gt;
+                        Liveness Detection
+                    &lt;/strong&gt;
+
+                    &lt;p class=&quot;text-secondary mb-0&quot;&gt;
+                        Presentation attack detection
+                    &lt;/p&gt;
+
+                &lt;/div&gt;
+
+                &lt;input
+                type=&quot;checkbox&quot;
+                class=&quot;form-check-input&quot;
+                checked&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;!-- RELIABILITY --&gt;
+
+&lt;div class=&quot;form-section mb-4&quot;&gt;
+
+    &lt;h4&gt;
+        02 — Reliability Test Data
+    &lt;/h4&gt;
+
+    &lt;p class=&quot;text-secondary&quot;&gt;
+        Enter aggregated authentication test results.
+    &lt;/p&gt;
+
+
+    &lt;div class=&quot;row g-4&quot;&gt;
+
+
+        &lt;div class=&quot;col-md-4&quot;&gt;
+
+            &lt;label&gt;
+                Total Attempts
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            id=&quot;attempts&quot;
+            class=&quot;form-control&quot;
+            value=&quot;1000&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-4&quot;&gt;
+
+            &lt;label&gt;
+                Successful Authentications
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            id=&quot;successful&quot;
+            class=&quot;form-control&quot;
+            value=&quot;880&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-4&quot;&gt;
+
+            &lt;label&gt;
+                Failed Authentications
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            class=&quot;form-control&quot;
+            value=&quot;120&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-3&quot;&gt;
+
+            &lt;label&gt;
+                False Acceptances
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            id=&quot;falseAccept&quot;
+            class=&quot;form-control&quot;
+            value=&quot;8&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-3&quot;&gt;
+
+            &lt;label&gt;
+                False Rejections
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            id=&quot;falseReject&quot;
+            class=&quot;form-control&quot;
+            value=&quot;32&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-3&quot;&gt;
+
+            &lt;label&gt;
+                Genuine Attempts
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            class=&quot;form-control&quot;
+            value=&quot;900&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-3&quot;&gt;
+
+            &lt;label&gt;
+                Impostor Attempts
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            class=&quot;form-control&quot;
+            value=&quot;100&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;label&gt;
+                Average Response Time
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            class=&quot;form-control&quot;
+            value=&quot;420&quot;&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;!-- PRIVACY --&gt;
+
+&lt;div class=&quot;form-section mb-4&quot;&gt;
+
+    &lt;h4&gt;
+        03 — Privacy &amp; Security Controls
+    &lt;/h4&gt;
+
+
+    &lt;div class=&quot;row g-3&quot;&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;div class=&quot;check-box&quot;&gt;
+
+                &lt;input type=&quot;checkbox&quot;
+                       checked&gt;
+
+                &lt;span&gt;
+                    Templates encrypted at rest
+                &lt;/span&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;div class=&quot;check-box&quot;&gt;
+
+                &lt;input type=&quot;checkbox&quot;
+                       checked&gt;
+
+                &lt;span&gt;
+                    TLS / HTTPS enabled
+                &lt;/span&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;div class=&quot;check-box&quot;&gt;
+
+                &lt;input type=&quot;checkbox&quot;&gt;
+
+                &lt;span&gt;
+                    Raw biometric data stored
+                &lt;/span&gt;&lt;/div&gt; &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;div class=&quot;check-box&quot;&gt;
+
+                &lt;input type=&quot;checkbox&quot;
+                       checked&gt;
+
+                &lt;span&gt;
+                    Role-based access control
+                &lt;/span&gt;&lt;/div&gt;  &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;div class=&quot;check-box&quot;&gt;
+
+                &lt;input type=&quot;checkbox&quot;
+                       checked&gt;
+
+                &lt;span&gt;
+                    Audit logging enabled
+                &lt;/span&gt; &lt;/div&gt;  &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;check-box&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;
+                &lt;span&gt;
+                    Retention policy defined
+                &lt;/span&gt; &lt;/div&gt; &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;check-box&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;
+                &lt;span&gt;
+                    Deletion process defined
+                &lt;/span&gt; &lt;/div&gt; &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;check-box&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;
+                       checked&gt;
+                &lt;span&gt;
+                    Regular security review
+                &lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;!-- ATTACK TESTS --&gt;
+
+&lt;div class=&quot;form-section mb-4&quot;&gt;
+
+    &lt;h4&gt;
+        04 — Authorized Attack Tests
+    &lt;/h4&gt;
+
+    &lt;p class=&quot;text-secondary&quot;&gt;
+        Enter results from authorized security testing.
+    &lt;/p&gt;
+
+
+    &lt;div class=&quot;row g-4&quot;&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;label&gt;
+                Replay Attempts
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            class=&quot;form-control&quot;
+            value=&quot;50&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;label&gt;
+                Replay Detected / Blocked
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            class=&quot;form-control&quot;
+            value=&quot;46&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;label&gt;
+                Spoofing Attempts
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            class=&quot;form-control&quot;
+            value=&quot;100&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;label&gt;
+                Spoofing Detected / Blocked
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            class=&quot;form-control&quot;
+            value=&quot;85&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;label&gt;
+                Authentication Bypass Attempts
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            class=&quot;form-control&quot;
+            value=&quot;20&quot;&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;col-md-6&quot;&gt;
+
+            &lt;label&gt;
+                Bypass Detected / Blocked
+            &lt;/label&gt;
+
+            &lt;input
+            type=&quot;number&quot;
+            class=&quot;form-control&quot;
+            value=&quot;19&quot;&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;!-- BUTTON --&gt;
+
+&lt;div class=&quot;text-end&quot;&gt;
+
+    &lt;a href=&quot;dashboard.html&quot;
+       class=&quot;btn btn-outline-light btn-lg me-2&quot;&gt;
+
+        Save Draft
+
+    &lt;/a&gt;
+
+
+    &lt;button
+    type=&quot;submit&quot;
+    class=&quot;btn btn-primary btn-lg&quot;&gt;
+
+        Run Risk Assessment
+
+        &lt;i class=&quot;bi bi-arrow-right&quot;&gt;&lt;/i&gt;
+
+    &lt;/button&gt;
+
+&lt;/div&gt;
+
+
+&lt;/form&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;script&gt;
+
+function runAssessment(event) {
+
+    event.preventDefault();
+
+    window.location.href =
+        &quot;results.html&quot;;
+
+}
+
+&lt;/script&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;                                                 
+																																		RESULT PART
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+
+&lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+&lt;title&gt;Assessment Results&lt;/title&gt;
+
+&lt;link
+href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot;
+rel=&quot;stylesheet&quot;&gt;
+
+&lt;link
+rel=&quot;stylesheet&quot;
+href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot;
+href=&quot;css/style.css&quot;&gt;
+
+&lt;/head&gt;
+
+
+&lt;body&gt;
+
+
+&lt;div class=&quot;sidebar&quot;&gt;
+
+    &lt;h4 class=&quot;fw-bold mb-5&quot;&gt;
+
+        &lt;i class=&quot;bi bi-shield-check text-primary&quot;&gt;&lt;/i&gt;
+        BioRisk
+    &lt;/h4&gt;
+    &lt;a href=&quot;dashboard.html&quot;&gt;
+        &lt;i class=&quot;bi bi-grid&quot;&gt;&lt;/i&gt;
+        Dashboard
+    &lt;/a&gt;
+    &lt;a href=&quot;assessment.html&quot;&gt;
+
+        &lt;i class=&quot;bi bi-plus-circle&quot;&gt;&lt;/i&gt;
+        New Assessment
+    &lt;/a&gt;
+    &lt;a href=&quot;history.html&quot;&gt;
+        &lt;i class=&quot;bi bi-clock-history&quot;&gt;&lt;/i&gt;
+        Assessment History
+    &lt;/a&gt;
+    &lt;a class=&quot;active&quot;
+       href=&quot;results.html&quot;&gt;
+        &lt;i class=&quot;bi bi-exclamation-diamond&quot;&gt;&lt;/i&gt;
+        Findings
+    &lt;/a&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;main-content&quot;&gt;
+&lt;div class=&quot;d-flex justify-content-between mb-4&quot;&gt;
+    &lt;div&gt;
+        &lt;small class=&quot;text-primary&quot;&gt;
+            ASSESSMENT RESULTS
+        &lt;/small&gt;
+
+        &lt;h2 class=&quot;fw-bold&quot;&gt;
+            ABC Bank — Mobile Banking
+        &lt;/h2&gt;
+
+    &lt;/div&gt;
+    &lt;button
+    onclick=&quot;window.print()&quot;
+    class=&quot;btn btn-primary&quot;&gt;
+
+        &lt;i class=&quot;bi bi-file-earmark-pdf&quot;&gt;&lt;/i&gt;
+
+        Print / PDF
+
+    &lt;/button&gt;
+
+&lt;/div&gt;
+
+
+&lt;!-- OVERALL SCORE --&gt;
+
+&lt;div class=&quot;dashboard-card mb-4&quot;&gt;
+
+    &lt;div class=&quot;row align-items-center&quot;&gt;
+
+        &lt;div class=&quot;col-md-7&quot;&gt;
+
+            &lt;span class=&quot;badge bg-success&quot;&gt;
+                LOW RISK
+            &lt;/span&gt;
+
+            &lt;h1 class=&quot;display-2 fw-bold mt-3&quot;&gt;
+                85
+                &lt;small class=&quot;fs-4 text-secondary&quot;&gt;
+                    /100
+                &lt;/small&gt;
+            &lt;/h1&gt;
+
+            &lt;p class=&quot;text-secondary&quot;&gt;
+                Overall Security Score
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-5 text-center&quot;&gt;
+            &lt;div class=&quot;score-circle large&quot;&gt;
+
+                &lt;h1&gt;
+                    85
+                &lt;/h1&gt;
+
+                &lt;span&gt;
+                    /100
+                &lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;!-- THREE PILLARS --&gt;
+
+&lt;div class=&quot;row g-4&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;dashboard-card&quot;&gt;
+            &lt;span class=&quot;text-secondary&quot;&gt;
+                Reliability
+            &lt;/span&gt;
+            &lt;h1&gt;
+                88
+            &lt;/h1&gt;
+            &lt;div class=&quot;progress&quot;&gt;
+                &lt;div
+                class=&quot;progress-bar&quot;
+                style=&quot;width:88%&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;small class=&quot;text-secondary&quot;&gt;
+                Weight: 35%
+            &lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;dashboard-card&quot;&gt;
+            &lt;span class=&quot;text-secondary&quot;&gt;
+                Privacy
+            &lt;/span&gt;
+
+            &lt;h1&gt;
+                82
+            &lt;/h1&gt;
+
+            &lt;div class=&quot;progress&quot;&gt;
+
+                &lt;div
+                class=&quot;progress-bar&quot;
+                style=&quot;width:82%&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;small class=&quot;text-secondary&quot;&gt;
+                Weight: 30%
+            &lt;/small&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;dashboard-card&quot;&gt;
+            &lt;span class=&quot;text-secondary&quot;&gt;
+                Attack Resistance
+            &lt;/span&gt;
+            &lt;h1&gt;
+                85
+            &lt;/h1&gt;
+            &lt;div class=&quot;progress&quot;&gt;
+                &lt;div
+                class=&quot;progress-bar&quot;
+                style=&quot;width:85%&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;small class=&quot;text-secondary&quot;&gt;
+                Weight: 35%
+            &lt;/small&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- FINDINGS --&gt;
+
+&lt;div class=&quot;row g-4 mt-2&quot;&gt;
+
+
+    &lt;div class=&quot;col-lg-7&quot;&gt;
+
+        &lt;div class=&quot;dashboard-card&quot;&gt;
+
+            &lt;h4&gt;
+                Priority Findings
+            &lt;/h4&gt;
+
+
+            &lt;div class=&quot;finding-card high&quot;&gt;
+
+                &lt;span class=&quot;badge bg-danger&quot;&gt;
+                    HIGH
+                &lt;/span&gt;
+
+                &lt;div&gt;
+
+                    &lt;h6&gt;
+                        Data retention policy is missing
+                    &lt;/h6&gt;
+                    &lt;p class=&quot;text-secondary mb-0&quot;&gt;
+                        Privacy governance weakness.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;finding-card medium mt-3&quot;&gt;
+
+                &lt;span class=&quot;badge bg-warning text-dark&quot;&gt;
+                    MEDIUM
+                &lt;/span&gt;
+                &lt;div&gt;
+                    &lt;h6&gt;
+                        Spoof detection needs improvement
+                    &lt;/h6&gt;
+
+                    &lt;p class=&quot;text-secondary mb-0&quot;&gt;
+                        Improve liveness detection
+                        and continue controlled testing.
+
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- RECOMMENDATIONS --&gt;
+    &lt;div class=&quot;col-lg-5&quot;&gt;
+        &lt;div class=&quot;dashboard-card&quot;&gt;
+            &lt;h4&gt;
+                Recommendations
+            &lt;/h4&gt;
+            &lt;ul class=&quot;mt-3&quot;&gt;
+                &lt;li class=&quot;mb-3&quot;&gt;
+                    Establish retention and
+                    deletion controls.
+                &lt;/li&gt;
+                &lt;li class=&quot;mb-3&quot;&gt;
+                    Strengthen liveness detection.
+                &lt;/li&gt;
+                &lt;li class=&quot;mb-3&quot;&gt;
+                    Continue periodic authorized
+                    attack testing.
+                &lt;/li&gt;
+                &lt;li&gt;
+                    Review audit logs regularly.
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;!-- FORMULA --&gt;
+
+&lt;div class=&quot;dashboard-card mt-4&quot;&gt;
+
+    &lt;h4&gt;
+        Risk Engine Calculation
+    &lt;/h4&gt;
+
+    &lt;p class=&quot;text-secondary&quot;&gt;
+
+        Overall Security Score =
+        Reliability × 0.35 +
+        Privacy × 0.30 +
+        Attack Resistance × 0.35
+
+    &lt;/p&gt;
+
+
+    &lt;div class=&quot;formula-box&quot;&gt;
+
+        88 × 0.35
+        +
+        82 × 0.30
+        +
+        85 × 0.35
+
+        =
+
+        &lt;strong&gt;
+            85
+        &lt;/strong&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+																																							HISTORY PART
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+
+&lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+&lt;title&gt;Assessment History&lt;/title&gt;
+
+&lt;link
+href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot;
+rel=&quot;stylesheet&quot;&gt;
+
+&lt;link
+rel=&quot;stylesheet&quot;
+href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot;
+href=&quot;css/style.css&quot;&gt;
+
+&lt;/head&gt;
+
+
+&lt;body&gt;
+
+
+&lt;div class=&quot;sidebar&quot;&gt;
+
+    &lt;h4 class=&quot;fw-bold mb-5&quot;&gt;
+
+        &lt;i class=&quot;bi bi-shield-check text-primary&quot;&gt;&lt;/i&gt;
+        BioRisk
+    &lt;/h4&gt;
+    &lt;a href=&quot;dashboard.html&quot;&gt;
+        &lt;i class=&quot;bi bi-grid&quot;&gt;&lt;/i&gt;
+        Dashboard
+
+    &lt;/a&gt;
+    &lt;a href=&quot;assessment.html&quot;&gt;
+
+        &lt;i class=&quot;bi bi-plus-circle&quot;&gt;&lt;/i&gt;
+        New Assessment
+
+    &lt;/a&gt;
+    &lt;a class=&quot;active&quot;
+       href=&quot;history.html&quot;&gt;
+
+        &lt;i class=&quot;bi bi-clock-history&quot;&gt;&lt;/i&gt;
+        Assessment History
+    &lt;/a&gt;
+    &lt;a href=&quot;results.html&quot;&gt;
+
+        &lt;i class=&quot;bi bi-exclamation-diamond&quot;&gt;&lt;/i&gt;
+        Findings
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;main-content&quot;&gt;
+&lt;div class=&quot;d-flex justify-content-between mb-4&quot;&gt;
+
+    &lt;div&gt;
+
+        &lt;small class=&quot;text-primary&quot;&gt;
+            HISTORY
+        &lt;/small&gt;
+        &lt;h2 class=&quot;fw-bold&quot;&gt;
+            Assessment History
+        &lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;assessment.html&quot;
+       class=&quot;btn btn-primary&quot;&gt;
+        &lt;i class=&quot;bi bi-plus&quot;&gt;&lt;/i&gt;
+        New Assessment
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dashboard-card&quot;&gt;
+&lt;div class=&quot;row g-3 mb-4&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+
+        &lt;input
+        type=&quot;text&quot;
+        class=&quot;form-control&quot;
+        placeholder=&quot;Search organization...&quot;&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3&quot;&gt;
+
+        &lt;select class=&quot;form-select&quot;&gt;
+
+            &lt;option&gt;
+                All Environments
+            &lt;/option&gt;
+
+            &lt;option&gt;
+                Mobile Banking
+            &lt;/option&gt;
+
+            &lt;option&gt;
+                ATM
+            &lt;/option&gt;
+
+            &lt;option&gt;
+                Web Portal
+            &lt;/option&gt;
+
+        &lt;/select&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3&quot;&gt;
+        &lt;select class=&quot;form-select&quot;&gt;
+            &lt;option&gt;
+                All Risk Levels
+            &lt;/option&gt;
+
+            &lt;option&gt;
+                Low
+            &lt;/option&gt;
+
+            &lt;option&gt;
+                Medium
+            &lt;/option&gt;
+
+            &lt;option&gt;
+                High
+            &lt;/option&gt;
+
+        &lt;/select&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;div class=&quot;table-responsive&quot;&gt;
+
+&lt;table class=&quot;table table-dark table-hover align-middle&quot;&gt;
+
+
+&lt;thead&gt;
+
+&lt;tr&gt;
+
+&lt;th&gt;
+Organization
+&lt;/th&gt;
+
+&lt;th&gt;
+Application
+&lt;/th&gt;
+
+&lt;th&gt;
+Date
+&lt;/th&gt;
+
+&lt;th&gt;
+Score
+&lt;/th&gt;
+
+&lt;th&gt;
+Risk
+&lt;/th&gt;
+
+&lt;th&gt;
+Assessor
+&lt;/th&gt;
+
+&lt;th&gt;
+Action
+&lt;/th&gt;
+
+&lt;/tr&gt;
+
+&lt;/thead&gt;
+
+
+&lt;tbody&gt;
+
+
+&lt;tr&gt;
+
+&lt;td&gt;
+ABC Bank
+&lt;/td&gt;
+
+&lt;td&gt;
+Mobile Banking
+&lt;/td&gt;
+
+&lt;td&gt;
+12 Aug 2026
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;strong&gt;
+85
+&lt;/strong&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+
+&lt;span class=&quot;badge bg-success&quot;&gt;
+Low
+&lt;/span&gt;
+
+&lt;/td&gt;
+
+&lt;td&gt;
+Security Assessor
+&lt;/td&gt;
+
+&lt;td&gt;
+
+&lt;a
+href=&quot;results.html&quot;
+class=&quot;btn btn-sm btn-outline-light&quot;&gt;
+
+View
+
+&lt;/a&gt;
+
+&lt;/td&gt;
+
+&lt;/tr&gt;
+
+
+&lt;tr&gt;
+
+&lt;td&gt;
+FinSecure
+&lt;/td&gt;
+
+&lt;td&gt;
+ATM Authentication
+&lt;/td&gt;
+
+&lt;td&gt;
+09 Aug 2026
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;strong&gt;
+74
+&lt;/strong&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+
+&lt;span class=&quot;badge bg-warning text-dark&quot;&gt;
+Medium
+&lt;/span&gt;
+
+&lt;/td&gt;
+
+&lt;td&gt;
+Security Assessor
+&lt;/td&gt;
+
+&lt;td&gt;
+
+&lt;a
+href=&quot;results.html&quot;
+class=&quot;btn btn-sm btn-outline-light&quot;&gt;
+
+View
+
+&lt;/a&gt;
+
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+
+&lt;td&gt;
+NovaPay
+&lt;/td&gt;
+
+&lt;td&gt;
+Web Portal
+&lt;/td&gt;
+
+&lt;td&gt;
+02 Aug 2026
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;strong&gt;
+62
+&lt;/strong&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+
+&lt;span class=&quot;badge bg-danger&quot;&gt;
+High
+&lt;/span&gt;
+
+&lt;/td&gt;
+
+&lt;td&gt;
+Admin
+&lt;/td&gt;
+
+&lt;td&gt;
+
+&lt;a
+href=&quot;results.html&quot;
+class=&quot;btn btn-sm btn-outline-light&quot;&gt;
+View
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+																																CSS PART
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: #07111f;
+    color: #edf5ff;
+    font-family: Arial, sans-serif;
+}
+/* NAVBAR */
+
+.navbar {
+    background: rgba(7, 17, 31, 0.90);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid #20344d;
+}
+/* HERO */
+
+.hero-section {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            #14365c,
+            transparent 35%
+        ),
+        #07111f;
+}
+.text-primary {
+    color: #4f8cff !important;
+}
+.btn-primary {
+    background: linear-gradient(
+        135deg,
+        #4f8cff,
+        #35bce9
+    );
+    border: none;
+}
+.btn-primary:hover {
+    opacity: 0.9;
+}
+/* SCORE CIRCLE */
+
+.score-circle {
+    width: 180px;
+    height: 180px;
+
+    margin: auto;
+
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:
+        radial-gradient(
+            circle,
+            #0d1a2b 60%,
+            transparent 61%
+        );
+    border: 8px solid #42d6bb;
+    box-shadow:
+        0 0 35px rgba(
+            66,
+            214,
+            187,
+            0.2
+        );
+}
+.score-circle h1 {
+    font-size: 50px;
+    margin: 0;
+}
+.score-circle span {
+    color: #8ea3ba;
+}
+
+
+/* FEATURE */
+
+.feature-card {
+    background: #0d1a2b;
+
+    border: 1px solid #20344d;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #4f8cff;
+}
+
+
+.feature-icon {
+    font-size: 40px;
+
+    color: #4f8cff;
+
+    margin-bottom: 20px;
+}
+
+
+/* WORKFLOW */
+
+.workflow-item {
+    background: #0d1a2b;
+
+    border: 1px solid #20344d;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    margin-bottom: 12px;
+
+    font-weight: 600;
+}
+
+
+.workflow-item span {
+    color: #4f8cff;
+
+    margin-right: 15px;
+}
+
+
+/* LOGIN */
+
+.login-page {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 50% 0,
+            #153457,
+            transparent 45%
+        ),
+        #07111f;
+}
+.login-card {
+    background: #0d1a2b;
+    border: 1px solid #20344d;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.4);
+}
+.form-control,
+.form-select {
+    background: #081626;
+    border: 1px solid #29405b;
+    color: white;
+    padding: 12px;
+}
+.form-control:focus,
+.form-select:focus {
+    background: #081626;
+    color: white;
+    border-color: #4f8cff;
+    box-shadow:
+        0 0 0 3px
+        rgba(79,140,255,.15);
+}
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 240px;
+    padding: 30px 20px;
+    background: #06101d;
+    border-right: 1px solid #20344d;
+}
+.sidebar a {
+    display: block;
+
+    color: #8ea3ba;
+
+    text-decoration: none;
+
+    padding: 13px 15px;
+
+    border-radius: 8px;
+
+    margin-bottom: 7px;
+}
+
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #10233a;
+    color: white;
+}
+.sidebar i {
+    margin-right: 10px;
+}
+.sidebar-bottom {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+/* MAIN CONTENT */
+.main-content {
+    margin-left: 240px;
+    padding: 35px 4%;
+    min-height: 100vh;
+}
+/* DASHBOARD CARD */
+.dashboard-card,
+.form-section {
+    background: linear-gradient(
+        145deg,
+        #14263d,
+        #0a1728
+    );
+    border: 1px solid #20344d;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,.15);
+}
+/* PROGRESS */
+.progress {
+    height: 7px;
+    background: #1a3047;
+}
+/* FORM */
+.form-section label {
+    display: block;
+    margin-bottom: 7px;
+    color: #a8bbcf;
+}
+.control-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a1828;
+    border: 1px solid #20344d;
+    border-radius: 10px;
+    padding: 18px;
+}
+.check-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 17px;
+    background: #0a1828;
+    border: 1px solid #20344d;
+    border-radius: 10px;
+}
+/* STEPPER */
+.stepper {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.stepper span {
+    padding: 9px 15px;
+    background: #102136;
+    border-radius: 20px;
+    color: #7188a0;
+    font-size: 14px;
+}
+.stepper .active-step {
+    background: rgba( 79,140,255,.2);
+    color: #72a7ff;
+}
+/* FINDINGS */
+
+.finding-card {
+    display: flex;gap: 15px;padding: 18px;margin-top: 20px;background: #0a1828;border-radius: 10px;border-left: 4px solid;}
+.finding-card.high {border-color: #ff6464;}
+.finding-card.medium {
+    border-color: #ffbe55;
+}
+/* FORMULA */
+
+.formula-box { background: #071321; border: 1px dashed #315171; padding: 18px; border-radius: 10px; font-family: monospace; font-size: 18px;}
+/* TABLE */
+.table {
+    --bs-table-bg: transparent;
+}
+/* MOBILE */
+
+@media(max-width: 900px) {.sidebar { width: 70px; padding: 20px 10px;}
+ .sidebar h4 {
+        font-size: 0;
+    }
+    .sidebar h4 i {
+        font-size: 25px;
+    }
+    .sidebar a {
+        font-size: 0;
+        text-align: center;
+    }
+    .sidebar a i {
+        font-size: 20px;
+        margin: 0;
+    }
+    .sidebar-bottom {
+        display: none;
+    }
+    .main-content {
+        margin-left: 70px;
+    }
+}
+@media(max-width: 576px) {
+    .main-content {
+        padding: 20px 15px;
+    }
+    .main-content h2 {
+        font-size: 22px;
+    }
+    .dashboard-card,
+    .form-section {
+        padding: 18px;
+    }
+    .score-circle {
+        width: 140px;
+        height: 140px;
+    }
+}
+&lt;/html&gt;
+ </pre>
+</body>
+</html>

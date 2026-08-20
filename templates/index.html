@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}BioRisk Sentinel{% endblock %}
+
+{% block content %}
+  <section class="hero">
+    <span class="eyebrow">Cybersecurity assessment platform</span>
+    <h1>Evaluate biometric authentication risk with confidence.</h1>
+    <p class="lead">Assess reliability, privacy controls, and resistance to authorized simulated attacks using fictional or synthetic aggregate data.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="{{ url_for('auth.login') }}">Start an assessment</a>
+      <a class="btn btn-secondary" href="#pillars">Explore the workflow</a>
+    </div>
+  </section>
+  <section id="pillars" class="grid grid-3">
+    <div class="panel stat"><span class="stat-value">3</span><span class="muted">Security pillars</span></div>
+    <div class="panel stat"><span class="stat-value">100</span><span class="muted">Point privacy scale</span></div>
+    <div class="panel stat"><span class="stat-value">0</span><span class="muted">Biometric uploads accepted</span></div>
+  </section>
+  <section class="panel" style="margin-top:20px">
+    <h2>Designed for safe assessment</h2>
+    <p class="muted">BioRisk Sentinel evaluates an existing fictional system. It is not a biometric login, identity-verification, or recognition system.</p>
+  </section>
+{% endblock %}

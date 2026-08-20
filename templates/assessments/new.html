@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}Create assessment | BioRisk Sentinel{% endblock %}
+
+{% block content %}
+  <span class="eyebrow">Step 1 of 4</span>
+  <h1>Create assessment</h1>
+  <div class="workflow-steps" aria-label="Assessment workflow">
+    <div class="workflow-step active"><strong>01 · Scope</strong>System profile</div>
+    <div class="workflow-step"><strong>02 · Reliability</strong>Aggregate metrics</div>
+    <div class="workflow-step"><strong>03 · Privacy</strong>Control review</div>
+    <div class="workflow-step"><strong>04 · Results</strong>Risk summary</div>
+  </div>
+  <p class="notice"><strong>Privacy notice:</strong> Enter only fictional organisation names and synthetic or aggregate assessment data. Do not upload or enter biometric images, templates, passwords, banking records, or personal customer data.</p>
+  <section class="panel" style="margin-top:20px">
+  <form method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <label>Organisation name <input type="text" name="organization_name" required maxlength="255" autocomplete="organization"></label>
+    <label>Application or system name <input type="text" name="application_name" required maxlength="255"></label>
+    <label>Environment
+        <select name="environment" required>
+          <option value="" disabled selected>Select environment</option>
+          {% for environment in environments %}
+            <option value="{{ environment }}">{{ environment }}</option>
+          {% endfor %}
+        </select>
+    </label>
+    <label>Biometric type
+        <select name="biometric_type" required>
+          <option value="" disabled selected>Select biometric type</option>
+          {% for biometric_type in biometric_types %}
+            <option value="{{ biometric_type }}">{{ biometric_type }}</option>
+          {% endfor %}
+        </select>
+    </label>
+    <label>MFA enabled
+        <select name="mfa_enabled" required>
+          <option value="" disabled selected>Select yes or no</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+    </label>
+    <label>Liveness detection enabled
+        <select name="liveness_enabled" required>
+          <option value="" disabled selected>Select yes or no</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+    </label>
+    <label>Does the assessed system provide administrator access?
+        <select name="admin_accessible" required>
+          <option value="" disabled selected>Select yes or no</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+    </label>
+    <div class="actions"><button type="submit">Create assessment</button><a class="btn btn-secondary" href="{{ url_for('assessments.index') }}">Cancel</a></div>
+  </form>
+  </section>
+{% endblock %}

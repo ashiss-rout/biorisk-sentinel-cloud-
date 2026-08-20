@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}Printable report | BioRisk Sentinel{% endblock %}
+
+{% block content %}
+  <div class="actions no-print" style="justify-content:space-between">
+    <div>
+      <span class="eyebrow">Assessment report</span>
+      <h1>BioRisk Sentinel — Assessment Report</h1>
+    </div>
+    <button type="button" onclick="window.print()">Print report</button>
+  </div>
+  <section class="panel">
+    <h2>{{ assessment.organization_name }}</h2>
+    <p class="lead">{{ assessment.application_name }} · {{ assessment.environment }} · {{ assessment.biometric_type }}</p>
+    <p class="notice">This report contains fictional organisation metadata and aggregate assessment metrics only. It does not include biometric images, templates, or personal data.</p>
+  </section>
+
+  <section class="grid grid-3" style="margin-top:20px">
+    <div class="panel score-card"><span class="muted">Reliability</span><div class="score">{{ results.reliability_score }}</div><span class="muted">/ 100</span><div class="score-bar"><span style="width:{{ results.reliability_score }}%"></span></div></div>
+    <div class="panel score-card"><span class="muted">Privacy</span><div class="score">{{ results.privacy_score }}</div><span class="muted">/ 100</span><div class="score-bar"><span style="width:{{ results.privacy_score }}%"></span></div></div>
+    <div class="panel score-card"><span class="muted">Attack resistance</span><div class="score">{{ results.attack_resistance_score }}</div><span class="muted">/ 100</span><div class="score-bar"><span style="width:{{ results.attack_resistance_score }}%"></span></div></div>
+  </section>
+
+  <section class="panel" style="margin-top:20px">
+    <h2>Overall score</h2>
+    <div class="score">{{ results.overall_score }} <span class="muted">/ 100</span></div>
+    <p>Risk level: <strong>{{ results.risk_level }}</strong></p>
+    {% if results.urgent_review_required %}
+      <div class="notice warning"><strong>Urgent review required</strong>
+        <ul>{% for reason in results.override_reasons %}<li>{{ reason }}</li>{% endfor %}</ul>
+      </div>
+    {% endif %}
+  </section>
+
+  <section class="panel" style="margin-top:20px">
+    <h2>Findings and recommendations</h2>
+    {% if results.findings %}
+      {% for finding in results.findings %}
+        <article class="finding {{ finding.severity }}">
+          <strong>{{ finding.severity }}: {{ finding.title }}</strong>
+          <p>{{ finding.description }}</p>
+          <p><strong>Recommendation:</strong> {{ finding.recommendation }}</p>
+        </article>
+      {% endfor %}
+    {% else %}
+      <p class="muted">No findings were generated.</p>
+    {% endif %}
+  </section>
+
+  <section class="panel" style="margin-top:20px">
+    <h2>Report details</h2>
+    <p>Assessor: {{ assessment.assessor.name }}</p>
+    <p>Created: {{ assessment.created_at.strftime('%Y-%m-%d %H:%M UTC') }}</p>
+  </section>
+  <div class="actions no-print" style="margin-top:20px">
+    <a class="btn btn-secondary" href="{{ url_for('assessments.results', assessment_id=assessment.id) }}">Back to results</a>
+  </div>
+{% endblock %}

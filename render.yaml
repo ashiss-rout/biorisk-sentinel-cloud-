@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: biorisk-sentinel
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --workers 2 --timeout 120 wsgi:app
+    healthCheckPath: /health
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: biorisk-sentinel-db
+          property: connectionString
+
+databases:
+  - name: biorisk-sentinel-db
+    databaseName: biorisk
+    user: biorisk

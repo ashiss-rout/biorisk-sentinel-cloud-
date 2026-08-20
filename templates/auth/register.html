@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Create assessor account | BioRisk Sentinel{% endblock %}
+
+{% block content %}
+  <section class="panel" style="max-width:560px;margin:30px auto">
+    <span class="eyebrow">Assessment workspace</span>
+    <h1>Create assessor account</h1>
+    <p class="muted">Public registration creates assessor accounts only. Administrator accounts are created locally by a project maintainer.</p>
+    <form method="post">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <label>Name <input type="text" name="name" required maxlength="120" autocomplete="name"></label>
+      <label>Email <input type="email" name="email" required maxlength="255" autocomplete="email"></label>
+      <label>Password <input type="password" name="password" required minlength="12" autocomplete="new-password"></label>
+      <label>Confirm password <input type="password" name="confirm_password" required minlength="12" autocomplete="new-password"></label>
+      <button type="submit">Create account</button>
+    </form>
+    <p><a href="{{ url_for('auth.login') }}">Already have an account?</a></p>
+  </section>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Assessment workspace | BioRisk Sentinel{% endblock %}
+
+{% block content %}
+  <div class="actions" style="justify-content:space-between">
+    <div>
+      <span class="eyebrow">Assessment workspace</span>
+      <h1>Security assessment history</h1>
+      <p class="muted">Signed in as {{ current_user.name }} ({{ current_user.role }}). Fictional or synthetic aggregate data only.</p>
+    </div>
+    <a class="btn btn-primary" href="{{ url_for('assessments.new') }}">Create new assessment</a>
+  </div>
+
+  {% if assessments %}
+    <div class="panel table-wrap">
+      <h2>Assessment history</h2>
+      <table>
+        <thead><tr><th>Organisation</th><th>Application</th><th>Environment</th><th>Created</th><th>Status</th><th>Actions</th></tr></thead>
+        <tbody>
+          {% for assessment in assessments %}
+            <tr>
+              <td><strong>{{ assessment.organization_name }}</strong></td>
+              <td>{{ assessment.application_name }}</td>
+              <td>{{ assessment.environment }}</td>
+              <td>{{ assessment.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+              <td>
+                {% if completion[assessment.id] %}<span class="badge badge-success">Complete</span>
+                {% else %}<span class="badge badge-warning">In progress</span>{% endif %}
+              </td>
+              <td class="actions">
+                <a href="{{ url_for('assessments.reliability', assessment_id=assessment.id) }}">Reliability</a>
+                <a href="{{ url_for('assessments.privacy', assessment_id=assessment.id) }}">Privacy</a>
+                <a href="{{ url_for('assessments.attacks', assessment_id=assessment.id) }}">Attacks</a>
+                <a href="{{ url_for('assessments.results', assessment_id=assessment.id) }}">Results</a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <section class="panel">
+      <h2>No assessments yet</h2>
+      <p class="muted">Create a fictional-system assessment to begin the three-pillar review.</p>
+      <a class="btn btn-primary" href="{{ url_for('assessments.new') }}">Create assessment</a>
+    </section>
+  {% endif %}
+{% endblock %}

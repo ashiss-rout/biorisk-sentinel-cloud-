@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Sign in | BioRisk Sentinel{% endblock %}
+
+{% block content %}
+  <section class="panel" style="max-width:520px;margin:30px auto">
+    <span class="eyebrow">Secure assessor access</span>
+    <h1>Sign in</h1>
+    <form method="post">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <label>Email <input type="email" name="email" required autocomplete="email"></label>
+      <label>Password <input type="password" name="password" required autocomplete="current-password"></label>
+      <button type="submit">Sign in</button>
+    </form>
+    <p><a href="{{ url_for('auth.register') }}">Need an assessor account?</a></p>
+  </section>
+{% endblock %}
