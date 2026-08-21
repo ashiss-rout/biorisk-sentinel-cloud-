@@ -2,7 +2,7 @@ import unittest
 
 from app import create_app
 from extensions import db
-from config import ProductionConfig
+from config import ProductionConfig, normalize_database_url
 
 
 class CloudReadinessTests(unittest.TestCase):
@@ -41,6 +41,14 @@ class CloudReadinessTests(unittest.TestCase):
         )
 
         self.assertEqual(response.status_code, 400)
+
+    def test_render_postgresql_urls_use_psycopg_three(self):
+        for prefix in ("postgres://", "postgresql://"):
+            normalized = normalize_database_url(prefix + "user:pass@host/database")
+            self.assertEqual(
+                normalized,
+                "postgresql+psycopg://user:pass@host/database",
+            )
 
 
 if __name__ == "__main__":
